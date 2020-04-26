@@ -2,7 +2,7 @@ var adr = require('url');
 var http = require('http');
 const MongoClient = require('mongodb').MongoClient;
 
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 3000;
 const url = "mongodb+srv://jstewa12:ijams768@cluster0-v4rg9.mongodb.net/test?retryWrites=true&w=majority";
 http.createServer((request, response) => {
     if (request.url === '/favicon.ico') {
