@@ -10,4 +10,5 @@ http.createServer((request, response) => {
 
     response.write("Hello world!");
     console.log("Hello world!");
-}).listen(8080);
+    response.end();
+}).listen(port);
